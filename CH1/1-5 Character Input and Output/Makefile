@@ -1,7 +1,6 @@
 OutFolder=bin
 
 All: check-outFolder
-	mkdir ./bin
 	cc CharacterCounting.c -o bin/CharacterCounting
 	cc CharacterCounting_v2.c -o bin/CharacterCounting_v2
 	cc FileCopying_v1.c -o bin/FileCopying_v1
