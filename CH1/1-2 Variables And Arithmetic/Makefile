@@ -1,4 +1,12 @@
+OutFolder=bin
 
-All:
-	mkdir ./bin
-	cc main.c -o bin/main
+All: check-outFolder
+	cc main.c -o $(OutFolder)/main
+
+check-outFolder:
+	if [ ! -d $(OutFolder) ]; then \
+		mkdir $(OutFolder); \
+	fi;
+
+clean:
+	rm -f $(OutFolder)/*
