@@ -14,3 +14,11 @@
 
 # symbolic constants
 > #define name replacment text </br>
+
+# function
+> return-type function-name(parameter declarations, if any) </br>
+> { </br>
+>   declarations </br>
+>   statements </br>
+>   return return-type </br> // when return-type != void
+> }
