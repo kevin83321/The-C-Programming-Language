@@ -31,7 +31,7 @@ int main(){
 // get_line : read a line into s, return length
 int get_line(){
     int c, i;
-    extern char line[]; // use global variable
+    extern char line[]; // use global variable which didn't define
     for (i = 0; i < MAXLINE - 1 && (c= getchar()) != EOF && c != '\n'; ++i)
         line[i] = c;
     if (c == '\n'){
@@ -45,7 +45,7 @@ int get_line(){
 // copy: copy 'from' into 'to'; assume to is big enough
 void copy(void){
     int i;
-    extern char line[], longest[]; // use global variable
+    extern char line[], longest[]; // use global variable which didn't define
 
     i = 0;
     while((longest[i] = line[i]) != '\0')
