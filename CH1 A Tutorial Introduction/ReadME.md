@@ -20,5 +20,5 @@
 > { </br>
 >   declarations </br>
 >   statements </br>
->   return return-type </br> // when return-type != void
+>   return return-type // when return-type != void</br>
 > }
