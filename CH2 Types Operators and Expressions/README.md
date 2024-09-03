@@ -35,3 +35,21 @@
 > - \" : double quote </br>
 > - \ooo : octal number </br>
 > - \xhh : hexadecimal number </br>
+
+# 2.5 Arithmetic Operators
+> - \+ </br>
+> - \- </br>
+> - \* </br>
+> - / </br>
+> - % : modulus </br>
+
+# 2.6 Relation and Logical operators
+> precedence lower than arthimetic operators </br>
+> - \> : greater than</br>
+> - \>= : greater than equal</br>
+> - <  : less than</br>
+> - <= : less than equal</br>
+> - == : equals, which precedence lower previous 4 operators </br>
+> - != : not equals, which precedence lower previous 4 operators but higher than assignment</br>
+> - && : and </br>
+> - || : or, which precedence lower than && </br>
