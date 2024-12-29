@@ -25,3 +25,7 @@ int upper(int c){
         return c - 'a' + 'A';
     return c;
 }
+
+int main(){
+    return 0;
+}
