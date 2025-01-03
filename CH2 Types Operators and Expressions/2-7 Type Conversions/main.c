@@ -26,6 +26,22 @@ int upper(int c){
     return c;
 }
 
+unsigned long int next = 1;
+
+int rand(void){
+    next = next * 1103515245 + 12345;
+    return (unsigned int)(next/65536) % 32768;
+}
+
+int srand(unsigned int seed){
+    next = seed;
+}
+
 int main(){
+    
+    printf("origin value : %ld\n", next);
+    printf("rand = %d\n", rand());
+    printf("after seed with 5 = %d\n", srand(5));
+    printf("rand after seed with 5 = %d\n", rand());
     return 0;
 }
